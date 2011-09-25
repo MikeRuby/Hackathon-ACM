@@ -1,14 +1,42 @@
+/* @group Standard Layouts */
+
+html {
+    background: #151515 url(../images/bg.png) repeat fixed left;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Liberation Sans, Arial, sans-serif;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased; 
+}
+
 body {
 	margin: 0 auto;
 	width: 960px;
-	background: #000 url(../images/bg.png) repeat;
+	position: relative;
+    text-shadow: 0 0 2px #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	
 }
 
-#wrapper {
-	background-color: #fff;
-	padding: 20px;
+/* @end */
+
+/* @group Fonts */
+
+
+
+/* @end */
+
+/* @group Sections Layout */
+
+.register_bar {
+	background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
+
+/* @end */
+
