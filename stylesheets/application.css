@@ -1,7 +1,9 @@
 /* @group Standard Layouts */
 
 html {
-    background: #151515 url(../images/bg.png) repeat fixed left;
+    background: url(../images/logo_bg.png) center 150px no-repeat,
+    			url(../images/bg.png) top left repeat;
+    background-color: #151515;
     color: #fff;
     font-family: "Helvetica Neue", Helvetica, Liberation Sans, Arial, sans-serif;
     font-size: 12px;
