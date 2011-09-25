@@ -1,7 +1,7 @@
 /* @group Standard Layouts */
 
 html {
-    background: url(../images/logo_bg.png) center 400px no-repeat,
+    background: url(../images/logo_bg.png) center 380px no-repeat,
     			url(../images/bg.png) top left repeat;
     background-color: #151515;
     color: #fff;
