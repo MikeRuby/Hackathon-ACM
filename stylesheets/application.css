@@ -51,20 +51,41 @@ h1, h2, h3, h4, h5, h6 {
 	height: 50px;
 }
 
-#red_stripe {
+#top_stripe {
 	width: 100%;
-	height: 300px;
-	background-color: #9c0306;
+	height: 240px;
+	background-color: #000;
 	overflow: visible;
+	-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+#stripe_content {
+	margin: 0 auto;
+	width: 960px;
+	height: 240px;
+	z-index: 0;
+}
+
+#logo_fold {
+	position: absolute;
+	margin: -32px 0px 0px 200px;
+	width: 314px;
+	height: 300px;
+	text-indent: -5000px;
+	background-image: url("../images/fold.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	z-index: 50;
 }
 
 #wrapper {
 	width: 960px;
 	min-height: 500px;
 	margin: 0 auto;
-	background-color: rgba(0,0,0,0.3);
+	/* background-color: rgba(0,0,0,0.3); 
 	border-left: 1px solid #212121;
-	border-right: 1px solid #212121;
+	border-right: 1px solid #212121;*/
 }
 
 /* @end */
