@@ -4,18 +4,15 @@ html {
     background: url(../images/logo_bg.png) center 380px no-repeat,
     			url(../images/bg.png) top left repeat;
     background-color: #151515;
+    background-attachment: fixed;
     color: #fff;
+    /*font-family: "Open Sans", Helvetica Neue, Helvetica, Liberation Sans, sans-serif;*/
     font-family: "Helvetica Neue", Helvetica, Liberation Sans, Arial, sans-serif;
-    font-size: 12px;
     -webkit-font-smoothing: antialiased; 
 }
 
 body {
-/*	margin: 0 auto;
-	width: 960px;
-	position: relative;
-*/
-    text-shadow: 0 0 2px #333;
+    text-shadow: 1px 1px 2px #333;
 }
 
 a {
@@ -26,19 +23,101 @@ a {
     -o-transition: color 500ms ease;
     -webkit-transition: color 500ms ease;
     transition: color 500ms ease; }
-a:link { color: #ff8500; }
+a:link { color: #9c0306; }
 a:hover { color: #fff; }
-a:visited { color: #c76718; }
+a:visited { color: #9c0306; }
 
-h1, h2, h3, h4, h5, h6 {
-	
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, fieldset, address { margin: 1em 0; }
+
+h1, h2, h3 {
+	color: rgba(100, 100, 100, 1);
+	-moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    cursor: default;
+	font-weight: bold;
+    text-transform: uppercase; 
+    font-family: 'GothicCustom', 'Arial Narrow', sans-serif; 
+}
+    
+h1 {
+	font-size: 60px;
+	float: left;
+    width: 228px;
+	margin-top: 30px;
+}
+
+h1.first {
+	font-size: 60px;
+	margin: 0;
+    padding: 0;
+	float: none;
+	width: auto;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 30px 0;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h1:hover, h2:hover, h3:hover {
+	color: #c0c0c0;
+}
+
+p {
+	line-height: 22px;
+	font-size: 18px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+section header h1 {
+	background: transparent url(../images/star.png) no-repeat -20px 20px;
+}
+
+/*section header h1:after {
+	content: "»";
+    margin-left: -48px;
+    padding-right: 12px; 
+}*/
+
+header, section { 
+	display: block;
+}
+
+#wrapper {
+	width: 960px;
+	min-height: 500px;
+	margin: 0 auto;
+	/*background-color: rgba(0,0,0,0.3); 
+	border-left: 1px solid #212121;
+	border-right: 1px solid #212121;*/
+	padding-top: 100px;
 }
 
 /* @end */
 
 /* @group Fonts */
 
+@font-face {
+  font-family: 'GothicCustom';
+  src: url("LeagueGothic.eot");
+  src: local('â˜º'), url("LeagueGothic.otf") format('opentype'), url("leaguegothic.svg#lg") format('svg');
+}		
 
+@font-face {
+  font-family: 'MuseoCustom';
+  src: url("MuseoSans-500.eot");
+  src: local('â˜º'), url("MuseoSans-500.ttf") format('opentype'), url("museo.svg#museo") format('svg');
+}
 
 /* @end */
 
@@ -80,13 +159,53 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 50;
 }
 
-#wrapper {
-	width: 960px;
-	min-height: 500px;
-	margin: 0 auto;
-	/* background-color: rgba(0,0,0,0.3); 
-	border-left: 1px solid #212121;
-	border-right: 1px solid #212121;*/
+.content {
+	display: inline-block;
+	width: 732px;
+}
+
+.content ul {
+	font-size: 18px;
+	padding-left: 20px;
+	line-height: 25px;
+}
+
+.content ul li {
+	margin-bottom: 12px;
+	list-style-position: outside;
+	list-style-image: url(../images/circle_ok.png);
+}
+
+.agenda table {
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.agenda table tr td:first-child {
+  font-weight: bold;
+}
+
+.agenda table tr:hover td {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.agenda table th {
+  border-bottom: 1px solid #333333;
+}
+
+.agenda table th h2 {
+  text-align: left;
+  padding-left: 10px;
+  margin: 0px;
+  background-color: #222;
+}
+
+.agenda table td {
+  padding: 5px 10px;
+  vertical-align: top;
+  line-height: 1.4em;
+  border-bottom: 1px solid #333333;
 }
 
 /* @end */
