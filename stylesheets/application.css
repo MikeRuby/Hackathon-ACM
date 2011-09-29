@@ -12,25 +12,27 @@ html {
 }
 
 body {
-    text-shadow: 1px 1px 2px #333;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 18px;
 }
 
 a {
     font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
     text-decoration: none;
     -moz-transition: color 500ms ease;
     -ms-transition: color 500ms ease;
     -o-transition: color 500ms ease;
     -webkit-transition: color 500ms ease;
     transition: color 500ms ease; }
-a:link { color: #9c0306; }
+a:link { color: #7eadf2; }
 a:hover { color: #fff; }
-a:visited { color: #9c0306; }
+a:visited { color: #7eadf2; }
 
 h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, fieldset, address { margin: 1em 0; }
 
 h1, h2, h3 {
-	color: rgba(100, 100, 100, 1);
+	color: rgba(38, 47, 61, 1);
 	-moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
@@ -42,24 +44,23 @@ h1, h2, h3 {
     font-family: 'GothicCustom', 'Arial Narrow', sans-serif; 
 }
     
-h1 {
+/*h1 {
 	font-size: 60px;
 	float: left;
     width: 228px;
 	margin-top: 30px;
-}
+}*/
 
-h1.first {
+h1 {
 	font-size: 60px;
 	margin: 0;
     padding: 0;
-	float: none;
-	width: auto;
 }
 
 h2 {
+	color: rgba(140, 140, 140, 1);
 	font-size: 40px;
-	margin: 30px 0;
+	margin: 10px 0;
 }
 
 h3 {
@@ -76,11 +77,26 @@ p {
 }
 
 section {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	width: 690px;
+	display: block;
 }
 
 section header h1 {
 	background: transparent url(../images/star.png) no-repeat -20px 20px;
+}
+
+.left {
+	width: 690px;
+	margin-right: 20px;
+	float: left;
+	display: inline-block;
+}
+
+.right {
+	width: 250px;
+	float: right;
+	display: inline-block;
 }
 
 /*section header h1:after {
@@ -91,6 +107,23 @@ section header h1 {
 
 header, section { 
 	display: block;
+}
+
+footer { 
+	padding: 24px 0 0;
+}
+
+footer p {
+    background: #111;
+    clear: both;
+    margin: 24px 0 0;
+    padding: 24px 0;
+    text-align: center;
+    -moz-box-shadow: 0 -5px 5px rgba(0, 0, 0,0.2);
+    -webkit-box-shadow: 0 -5px 5px rgba(0, 0, 0,0.2);
+  	box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+	font-weight: bold;
+	font-size: 14px;
 }
 
 #wrapper {
@@ -161,7 +194,7 @@ header, section {
 
 .content {
 	display: inline-block;
-	width: 732px;
+	width: 690px;
 }
 
 .content ul {
@@ -180,6 +213,7 @@ header, section {
   font-size: 14px;
   border-collapse: collapse;
   width: 100%;
+	margin-top: 10px;
 }
 
 .agenda table tr td:first-child {
@@ -206,6 +240,20 @@ header, section {
   vertical-align: top;
   line-height: 1.4em;
   border-bottom: 1px solid #333333;
+}
+
+dl {
+	
+}
+
+dl dt {
+	color: rgba(140, 140, 140, 1);
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+dl dd {
+	margin-bottom: 14px;
 }
 
 /* @end */
