@@ -256,5 +256,9 @@ dl dd {
 	margin-bottom: 14px;
 }
 
+.note {
+	font-weight:bold;
+}
+
 /* @end */
 
